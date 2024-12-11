@@ -1,0 +1,3 @@
+# blockmemo_v0
+
+This is a Next.js Sui dApp project...
