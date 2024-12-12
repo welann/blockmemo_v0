@@ -1,12 +1,14 @@
 "use client";
+import { ConnectButton } from "@mysten/dapp-kit";
+import Image from "next/image";
+import { useCurrentAccount } from "@mysten/dapp-kit";
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
+import { useEffect, useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sidebar } from "./components/sidebar";
 import { SearchBar } from "./components/search-bar";
-import { ConnectButton } from "./components/connect-button";
+// import { ConnectButton } from "./components/connect-button";
 import { DocumentGallery } from "./components/document-gallery";
 import { DocumentViewer } from "./components/document-viewer";
 import { UploadButton } from "./components/upload-button";
@@ -14,6 +16,21 @@ import { UploadButton } from "./components/upload-button";
 export default function Home() {
   const [selectedDoc, setSelectedDoc] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+
+  const account = useCurrentAccount();
+
+  useEffect(() => {
+    async function fetchUserProfile() {
+      if (account?.address) {
+        try {
+        } catch (error) {
+          console.error("Error fetching user profile:", error);
+        }
+      }
+    }
+
+    fetchUserProfile();
+  }, [account]);
 
   // Mock data for documents
   const documents = [
