@@ -23,6 +23,18 @@ export default function Home() {
     { id: '4', name: 'DeFi Explained', preview: 'Dive into the world of Decentralized Finance...' },
     { id: '5', name: 'NFT Revolution', preview: 'Explore the impact of Non-Fungible Tokens...' },
     { id: '6', name: 'Blockchain Security', preview: 'Learn how to secure your blockchain applications...' },
+    { id: '7', name: 'Introduction to Sui', preview: 'Learn the basics of Sui blockchain...' },
+    { id: '8', name: 'Smart Contracts 101', preview: 'Understand the fundamentals of smart contracts...' },
+    { id: '9', name: 'Web3 Best Practices', preview: 'Discover the best practices for Web3 development...' },
+    { id: '10', name: 'DeFi Explained', preview: 'Dive into the world of Decentralized Finance...' },
+    { id: '51', name: 'NFT Revolution', preview: 'Explore the impact of Non-Fungible Tokens...' },
+    { id: '62', name: 'Blockchain Security', preview: 'Learn how to secure your blockchain applications...' },
+    { id: '13', name: 'Introduction to Sui', preview: 'Learn the basics of Sui blockchain...' },
+    { id: '245', name: 'Smart Contracts 101', preview: 'Understand the fundamentals of smart contracts...' },
+    { id: '36', name: 'Web3 Best Practices', preview: 'Discover the best practices for Web3 development...' },
+    { id: '74', name: 'DeFi Explained', preview: 'Dive into the world of Decentralized Finance...' },
+    { id: '85', name: 'NFT Revolution', preview: 'Explore the impact of Non-Fungible Tokens...' },
+    { id: '69', name: 'Blockchain Security', preview: 'Learn how to secure your blockchain applications...' },
   ]
 
   const filteredDocs = documents.filter(doc => 
