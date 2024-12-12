@@ -1,15 +1,15 @@
-import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { Home } from 'lucide-react'
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Home } from "lucide-react";
 
 interface Document {
-  id: string
-  name: string
+  id: string;
+  name: string;
 }
 
 interface SidebarProps {
-  documents: Document[]
-  onSelectDoc: (name: string | null) => void
+  documents: Document[];
+  onSelectDoc: (name: string | null) => void;
 }
 
 export function Sidebar({ documents, onSelectDoc }: SidebarProps) {
@@ -39,6 +39,5 @@ export function Sidebar({ documents, onSelectDoc }: SidebarProps) {
         </nav>
       </ScrollArea>
     </div>
-  )
+  );
 }
-

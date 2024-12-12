@@ -1,7 +1,7 @@
-import { Input } from "@/components/ui/input"
+import { Input } from "@/components/ui/input";
 
 interface SearchBarProps {
-  onSearch: (query: string) => void
+  onSearch: (query: string) => void;
 }
 
 export function SearchBar({ onSearch }: SearchBarProps) {
@@ -12,6 +12,5 @@ export function SearchBar({ onSearch }: SearchBarProps) {
       className="w-64 bg-gray-800 border-gray-700 text-white"
       onChange={(e) => onSearch(e.target.value)}
     />
-  )
+  );
 }
-

@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { ArrowLeft } from 'lucide-react'
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 interface DocumentViewerProps {
-  documentName: string
-  onBack: () => void
+  documentName: string;
+  onBack: () => void;
 }
 
 export function DocumentViewer({ documentName, onBack }: DocumentViewerProps) {
@@ -14,8 +14,9 @@ export function DocumentViewer({ documentName, onBack }: DocumentViewerProps) {
         Back to Gallery
       </Button>
       <h1 className="text-3xl font-bold mb-4">{documentName}</h1>
-      <p>This is where the Markdown content for {documentName} would be rendered.</p>
+      <p>
+        This is where the Markdown content for {documentName} would be rendered.
+      </p>
     </div>
-  )
+  );
 }
-
